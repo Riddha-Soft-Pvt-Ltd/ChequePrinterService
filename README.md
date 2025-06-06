@@ -1,33 +1,35 @@
 # 🧾 Cheque Printer Windows Service
 
-A lightweight Windows Service built on .NET Framework 4.5 that provides APIs to print cheques using predefined templates. It supports customizable formatting, leaf-based printing, and dynamic content generation. Ideal for banking, accounting, and POS scenarios.
+A lightweight Windows Service built on .NET Framework 4.5 for printing cheques using customizable templates. Designed to support LQ/LX dot matrix printers, POS printers, and Windows-compatible devices via REST-like APIs.
+
+> Developed and maintained by [Riddha Soft Pvt. Ltd.](https://github.com/Riddha-Soft-Pvt-Ltd)
 
 ---
 
 ## 🔧 Features
 
-- ✔️ REST-like HTTP API (self-hosted, no IIS required)
-- 🖨️ Support for ESC/P, Dot Matrix (LQ/LX), and Windows printers
-- 📄 Template-based cheque printing
-- 🧠 Intelligent formatter with multi-leaf support
-- 📡 System info API (IP, MAC, Machine Name)
-- 🌐 CORS enabled for browser use
-- 📁 Config-driven printer selection
+- ✅ Self-hosted HTTP API (no IIS)
+- 🖨️ Supports Dot Matrix, ESC/P, and Windows printers
+- 🧾 Template-based cheque printing with dynamic data
+- 📄 Multi-leaf print formatting support
+- 🔍 System info endpoint (MAC, IP, machine name)
+- 🌐 CORS enabled
+- ⚙️ Configurable printer selection via `app.config`
 
 ---
 
 ## 📦 Requirements
 
-- Windows 7/8/10/11 or Server
+- Windows 7 or higher / Server OS
 - [.NET Framework 4.5](https://dotnet.microsoft.com)
-- Admin privileges to install/start the service
+- Administrator privileges (to install/start the service)
 
 ---
 
-## 🚀 Setup & Run
+## 🚀 Setup & Installation
 
-### 1. Clone Repository
+### 1. Clone & Build
 
 ```bash
-git clone https://github.com/your-org/ChequePrinterService.git
+git clone https://github.com/Riddha-Soft-Pvt-Ltd/ChequePrinterService.git
 cd ChequePrinterService
